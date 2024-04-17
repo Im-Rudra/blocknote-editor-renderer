@@ -1,5 +1,5 @@
 import { parseBlocks } from '@/components/renderer/parser';
-import { blogJson, json } from '../assets/data';
+import { blogJson } from '../assets/data';
 
 export default function RenderPage() {
   return (

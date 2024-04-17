@@ -12,7 +12,6 @@
     "@blocknote/core": "^0.12.4",
     "@blocknote/react": "^0.12.4",
     "next": "14.1.4",
-    "novel": "^0.3.1",
     "react": "^18",
     "react-dom": "^18"
   },
