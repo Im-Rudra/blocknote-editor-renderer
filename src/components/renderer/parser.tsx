@@ -167,6 +167,7 @@ export function parseImage(block: Block) {
           }}
           className="rounded-md select-none"
           placeholder="empty"
+          priority
         />
         <span className="text-gray-500">{block.props.caption}</span>
       </div>
