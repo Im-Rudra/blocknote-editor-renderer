@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 
-const Editor = dynamic(() => import('@/components/BlockNoteEditor'), { ssr: false });
+const Editor = dynamic(() => import('@/components/Editor/BlockNoteEditor'), { ssr: false });
 
 export default function BlockEditorPage() {
   return (

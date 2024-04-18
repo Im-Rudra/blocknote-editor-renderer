@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import ThemeButton from '@/components/ThemeButton';
 
 const hindSiliguri = localFont({
   src: './assets/fonts/HindSiliguri/HindSiliguri-Medium.ttf',
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={hindSiliguri.className + ' dark:bg-slate-900'}
         suppressHydrationWarning={true}
       >
+        <ThemeButton />
         {children}
       </body>
     </html>

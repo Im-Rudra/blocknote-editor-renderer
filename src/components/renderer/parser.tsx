@@ -54,10 +54,10 @@ export function parseParagraph(block: Block) {
   }
 
   const alignment = block.props.textAlignment;
-  let textAlign = 'text-justify';
+  let textAlign = 'text-left';
   switch (alignment) {
     case 'left':
-      textAlign = 'text-justify';
+      textAlign = 'text-left';
       break;
 
     case 'center':
@@ -68,8 +68,12 @@ export function parseParagraph(block: Block) {
       textAlign = 'text-right';
       break;
 
-    default:
+    case 'justify':
       textAlign = 'text-justify';
+      break;
+
+    default:
+      textAlign = 'text-left';
       break;
   }
 

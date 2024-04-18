@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blocknote.js Editor
 
-## Getting Started
+Actually here I'm working on a project for block editor and it's renderer. And there is a challenge on the project which is my main focus. And I will use this editor and renderer in my future project 'fikr', a feature rich blog website with better SEO on Next.js@14
 
-First, run the development server:
+## Challenges
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- block editor is a client component which is okey. Because it doesn't need to render on server. It doesn't need SEO.
+- This editor output JSON or javascript Object. And this block editor doesn't have specific renderer.
+- There is one solution. We can use the editor it self in readonly mode. It will do the work properly for a raw react project or a client side rendering. But it can't achieve SEO. Which is very important for a blog content. So this solution is not proper.
+- So I need to create the renderer from scratch. Here is the main challenge.
+- Another challenge on the client side editor. I need some necessary blocks for my editor which is missing on the raw editor. So I need to create those thing on my own. I went throughly through their documentation. Maintaining all schemas properly with typescript its a bit challenging. But the good thing is Im getting on it gradually. Here documentation is the key. There is no video tutorial out There for me. Its completely on my own.
+- Working on a video component by which i can embed any video on my editor. Then also need to work on the renderer for the video render.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Notes:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- This is in very early stage.
+- File structure aren't in proper frame
+- Theme isn't configured properly
+- Not ready for third-party use
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+If you wanna use this on your project then just keep an eye one the repo. I will keep updating the repository Insha Allah.
 
-## Learn More
+### Links:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Blocknote.js - Editor](https://www.blocknotejs.org/)
+- [Live Site - Not Ready Yet](https://fikr-editor-renderer.vercel.app/)
